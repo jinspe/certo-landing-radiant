@@ -1,8 +1,8 @@
 'use client'
 
-export function Logo() {
+export function Logo({ className }: { className?: string }) {
   return (
-    <div className="flex items-center gap-1 px-1">
+    <div className={`flex items-center gap-1 px-1 ${className || ''}`}>
       <img src="/certo-logo.svg" alt="Certo" className="h-9" />
       <span
         className="text-xl font-medium text-gray-950"
