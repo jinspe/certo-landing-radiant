@@ -30,6 +30,8 @@ function Hero() {
           banner={
             <Link
               href="https://calendly.com/bastien-askcerto/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-hover:bg-fuchsia-950/30"
             >
               Book a demo - see Certo&apos;s compliance checks in action
@@ -46,7 +48,11 @@ function Hero() {
             product-specific checks, so you can move faster with less risk.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="https://calendly.com/bastien-askcerto/30min">
+            <Button
+              href="https://calendly.com/bastien-askcerto/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Schedule a demo
             </Button>
             <Button variant="secondary" href="#how-it-works">

@@ -120,6 +120,7 @@ function SocialLinks() {
       <Link
         href="https://facebook.com"
         target="_blank"
+        rel="noopener noreferrer"
         aria-label="Visit us on Facebook"
         className="text-gray-950 data-hover:text-gray-950/75"
       >
@@ -128,6 +129,7 @@ function SocialLinks() {
       <Link
         href="https://x.com"
         target="_blank"
+        rel="noopener noreferrer"
         aria-label="Visit us on X"
         className="text-gray-950 data-hover:text-gray-950/75"
       >
@@ -136,6 +138,7 @@ function SocialLinks() {
       <Link
         href="https://linkedin.com"
         target="_blank"
+        rel="noopener noreferrer"
         aria-label="Visit us on LinkedIn"
         className="text-gray-950 data-hover:text-gray-950/75"
       >

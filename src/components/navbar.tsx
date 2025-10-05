@@ -29,6 +29,8 @@ function DesktopNav() {
       <PlusGridItem className="relative flex">
         <Link
           href="https://calendly.com/bastien-askcerto/30min"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-hover:bg-black/2.5"
         >
           Schedule a demo
@@ -37,6 +39,8 @@ function DesktopNav() {
       <PlusGridItem className="relative flex">
         <Link
           href="https://demo.askcerto.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-hover:bg-black/2.5"
         >
           Login
@@ -88,6 +92,8 @@ function MobileNav() {
         >
           <Link
             href="https://calendly.com/bastien-askcerto/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-base font-medium text-gray-950"
           >
             Schedule a demo
@@ -104,6 +110,8 @@ function MobileNav() {
         >
           <Link
             href="https://demo.askcerto.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-base font-medium text-gray-950"
           >
             Login
