@@ -11,12 +11,7 @@ import { Link } from './link'
 import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
-const links = [
-  { href: '/pricing', label: 'Pricing' },
-  { href: '/company', label: 'Company' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/login', label: 'Login' },
-]
+const links = [{ href: '/company', label: 'Company' }]
 
 function DesktopNav() {
   return (
@@ -31,6 +26,22 @@ function DesktopNav() {
           </Link>
         </PlusGridItem>
       ))}
+      <PlusGridItem className="relative flex">
+        <Link
+          href="https://calendly.com/bastien-askcerto/30min"
+          className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-hover:bg-black/2.5"
+        >
+          Schedule a demo
+        </Link>
+      </PlusGridItem>
+      <PlusGridItem className="relative flex">
+        <Link
+          href="https://demo.askcerto.com"
+          className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-hover:bg-black/2.5"
+        >
+          Login
+        </Link>
+      </PlusGridItem>
     </nav>
   )
 }
@@ -66,6 +77,38 @@ function MobileNav() {
             </Link>
           </motion.div>
         ))}
+        <motion.div
+          initial={{ opacity: 0, rotateX: -90 }}
+          animate={{ opacity: 1, rotateX: 0 }}
+          transition={{
+            duration: 0.15,
+            ease: 'easeInOut',
+            rotateX: { duration: 0.3, delay: links.length * 0.1 },
+          }}
+        >
+          <Link
+            href="https://calendly.com/bastien-askcerto/30min"
+            className="text-base font-medium text-gray-950"
+          >
+            Schedule a demo
+          </Link>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, rotateX: -90 }}
+          animate={{ opacity: 1, rotateX: 0 }}
+          transition={{
+            duration: 0.15,
+            ease: 'easeInOut',
+            rotateX: { duration: 0.3, delay: (links.length + 1) * 0.1 },
+          }}
+        >
+          <Link
+            href="https://demo.askcerto.com"
+            className="text-base font-medium text-gray-950"
+          >
+            Login
+          </Link>
+        </motion.div>
       </div>
       <div className="absolute left-1/2 w-screen -translate-x-1/2">
         <div className="absolute inset-x-0 top-0 border-t border-black/5" />

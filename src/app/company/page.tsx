@@ -10,7 +10,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Company',
   description:
-    'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+    'We’re on a mission to transform consumer product compliance by automating ingredient verification, label claims, and supplier documentation across global regulations.',
 }
 
 function Header() {

@@ -28,7 +28,7 @@ import { notFound } from 'next/navigation'
 export const metadata: Metadata = {
   title: 'Blog',
   description:
-    'Stay informed with product updates, company news, and insights on how to sell smarter at your company.',
+    'Stay informed with product updates, company news, and insights on AI compliance agents for consumer products, ingredient verification, and global regulations.',
 }
 
 const postsPerPage = 5

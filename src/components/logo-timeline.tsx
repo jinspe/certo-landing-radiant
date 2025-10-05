@@ -13,11 +13,11 @@ function Row({ children }: { children: React.ReactNode }) {
 
 function Logo({
   label,
-  src,
+  emoji,
   className,
 }: {
   label: string
-  src: string
+  emoji: string
   className: string
 }) {
   return (
@@ -29,7 +29,7 @@ function Logo({
         '[--move-x-from:-100%] [--move-x-to:calc(100%+100cqw)] [animation-iteration-count:infinite] [animation-name:move-x] [animation-play-state:paused] [animation-timing-function:linear] group-hover:[animation-play-state:running]',
       )}
     >
-      <img alt="" src={src} className="size-4" />
+      <span className="text-lg">{emoji}</span>
       <span className="text-sm/6 font-medium text-white">{label}</span>
     </div>
   )
@@ -54,73 +54,73 @@ export function LogoTimeline() {
       <div className="@container absolute inset-0 grid grid-cols-1 pt-8">
         <Row>
           <Logo
-            label="Loom"
-            src="/logo-timeline/loom.svg"
+            label="EU 1223 2009"
+            emoji="🇪🇺"
             className="[animation-delay:-26s] [animation-duration:30s]"
           />
           <Logo
-            label="Gmail"
-            src="/logo-timeline/gmail.svg"
+            label="IFRA"
+            emoji="🌿"
             className="[animation-delay:-8s] [animation-duration:30s]"
           />
         </Row>
         <Row>
           <Logo
-            label="Asana"
-            src="/logo-timeline/asana.svg"
+            label="CLP Annex VI"
+            emoji="⚠️"
             className="[animation-delay:-40s] [animation-duration:40s]"
           />
           <Logo
-            label="Microsoft Teams"
-            src="/logo-timeline/microsoft-teams.svg"
+            label="REACH"
+            emoji="🧪"
             className="[animation-delay:-20s] [animation-duration:40s]"
           />
         </Row>
         <Row>
           <Logo
-            label="Google Calendar"
-            src="/logo-timeline/google-calendar.svg"
+            label="FDA MoCRA"
+            emoji="🇺🇸"
             className="[animation-delay:-10s] [animation-duration:40s]"
           />
           <Logo
-            label="Google Drive"
-            src="/logo-timeline/google-drive.svg"
+            label="ISO 22716"
+            emoji="📋"
             className="[animation-delay:-32s] [animation-duration:40s]"
           />
         </Row>
         <Row>
           <Logo
-            label="Basecamp"
-            src="/logo-timeline/basecamp.svg"
+            label="MFDS Korea"
+            emoji="🇰🇷"
             className="[animation-delay:-45s] [animation-duration:45s]"
           />
           <Logo
-            label="Discord"
-            src="/logo-timeline/discord.svg"
+            label="SFDA Saudi Arabia"
+            emoji="🇸🇦"
             className="[animation-delay:-23s] [animation-duration:45s]"
           />
         </Row>
         <Row>
           <Logo
-            label="Hubspot"
-            src="/logo-timeline/hubspot.svg"
+            label="GSO GCC"
+            emoji="🇦🇪"
             className="[animation-delay:-55s] [animation-duration:60s]"
           />
           <Logo
-            label="Slack"
-            src="/logo-timeline/slack.svg"
+            label="Health Canada"
+            emoji="🇨🇦"
             className="[animation-delay:-20s] [animation-duration:60s]"
           />
         </Row>
         <Row>
           <Logo
-            label="Adobe Creative Cloud"
-            src="/logo-timeline/adobe-creative-cloud.svg"
+            label="ANVISA Brazil"
+            emoji="🇧🇷"
             className="[animation-delay:-9s] [animation-duration:40s]"
           />
           <Logo
-            label="Zoom"
-            src="/logo-timeline/zoom.svg"
+            label="COFEPRIS Mexico"
+            emoji="🇲🇽"
             className="[animation-delay:-28s] [animation-duration:40s]"
           />
         </Row>

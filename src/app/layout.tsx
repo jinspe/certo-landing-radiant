@@ -5,8 +5,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Radiant',
-    default: 'Radiant - Close every deal',
+    template: '%s - Certo',
+    default: 'Certo - AI Compliance Agents for Consumer Products',
   },
 }
 
@@ -25,7 +25,7 @@ export default function RootLayout({
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="The Radiant Blog"
+          title="The Certo Blog"
           href="/blog/feed.xml"
         />
       </head>

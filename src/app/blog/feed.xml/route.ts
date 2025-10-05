@@ -1,5 +1,6 @@
 import { image } from '@/sanity/image'
 import { getPostsForFeed } from '@/sanity/queries'
+import { SITE } from '@/utils/constants'
 import { Feed } from 'feed'
 import assert from 'node:assert'
 
@@ -7,12 +8,12 @@ export async function GET(req: Request) {
   let siteUrl = new URL(req.url).origin
 
   let feed = new Feed({
-    title: 'The Radiant Blog',
+    title: 'The Certo Blog',
     description:
-      'Stay informed with product updates, company news, and insights on how to sell smarter at your company.',
+      'Stay informed with product updates, company news, and insights on AI compliance agents for consumer products, ingredient verification, and global regulations.',
     author: {
-      name: 'Michael Foster',
-      email: 'michael.foster@example.com',
+      name: 'Certo Team',
+      email: SITE.EMAIL,
     },
     id: siteUrl,
     link: siteUrl,

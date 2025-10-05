@@ -3,12 +3,12 @@
 import { motion } from 'framer-motion'
 
 function Marker({
-  src,
+  emoji,
   top,
   offset,
   delay,
 }: {
-  src: string
+  emoji: string
   top: number
   offset: number
   delay: number
@@ -33,11 +33,9 @@ function Marker({
           className="fill-white"
         />
       </svg>
-      <img
-        alt=""
-        src={src}
-        className="absolute top-[4px] left-[7px] size-6 rounded-full"
-      />
+      <span className="absolute top-[4px] left-[7px] flex size-6 items-center justify-center text-xs">
+        {emoji}
+      </span>
     </motion.div>
   )
 }
@@ -47,11 +45,11 @@ export function Map() {
     <div aria-hidden="true" className="relative size-full">
       <div className="absolute inset-0 bg-[url(/map.png)] mask-[linear-gradient(to_bottom,black_50%,transparent)] bg-size-[530px_430px] bg-position-[center_-75px] bg-no-repeat" />
       <div className="absolute inset-0">
-        <Marker src="/map/1.jpg" top={96} offset={-128} delay={0.15} />
-        <Marker src="/map/2.jpg" top={160} offset={-16} delay={0.4} />
-        <Marker src="/map/3.jpg" top={144} offset={96} delay={0.3} />
-        <Marker src="/map/4.jpg" top={192} offset={64} delay={0.6} />
-        <Marker src="/map/5.jpg" top={224} offset={-32} delay={0.8} />
+        <Marker emoji="✅" top={75} offset={-128} delay={0.15} />
+        <Marker emoji="🔍" top={130} offset={-18} delay={0.4} />
+        <Marker emoji="❌" top={144} offset={96} delay={0.3} />
+        <Marker emoji="✅" top={192} offset={64} delay={0.6} />
+        <Marker emoji="⚠️" top={230} offset={-32} delay={0.8} />
       </div>
     </div>
   )

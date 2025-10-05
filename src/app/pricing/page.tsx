@@ -17,7 +17,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Pricing',
   description:
-    'Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.',
+    'Companies worldwide trust Certo for AI compliance agents. Automate ingredient verification, label claims, and supplier documentation across global regulations.',
 }
 
 const tiers = [
