@@ -95,47 +95,91 @@ function Logo({
   )
 }
 
+function LogoWithCustomSize({
+  src,
+  left,
+  top,
+  hover,
+  imageSize = 'h-12 w-12',
+}: {
+  src: string
+  left: number
+  top: number
+  hover: { x: number; y: number; rotate: number; delay: number }
+  imageSize?: string
+}) {
+  return (
+    <motion.div
+      variants={{
+        idle: { x: 0, y: 0, rotate: 0 },
+        active: {
+          x: [0, hover.x, 0],
+          y: [0, hover.y, 0],
+          rotate: [0, hover.rotate, 0],
+          transition: {
+            duration: 0.75,
+            repeat: Infinity,
+            repeatDelay: 1.25,
+            ease: 'easeInOut',
+            delay: hover.delay,
+          },
+        },
+      }}
+      style={{ left, top } as React.CSSProperties}
+      className="absolute flex size-16 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-black/5"
+    >
+      <img src={src} alt="" className={imageSize} />
+    </motion.div>
+  )
+}
+
 export function LogoCluster() {
   return (
     <div aria-hidden="true" className="relative h-full overflow-hidden">
       <Circles />
       <div className="absolute left-1/2 h-full w-104 -translate-x-1/2">
         <MainLogo />
-        <Logo
-          src="/logo-cluster/career-builder.svg"
+        <LogoWithCustomSize
+          src="/logo-cluster/kr.svg"
           left={360}
           top={144}
           hover={{ x: 6, y: 1, rotate: 5, delay: 0.38 }}
+          imageSize="h-12 w-12"
         />
-        <Logo
-          src="/logo-cluster/dribbble.svg"
+        <LogoWithCustomSize
+          src="/logo-cluster/ifra.svg"
           left={285}
           top={20}
           hover={{ x: 4, y: -5, rotate: 6, delay: 0.3 }}
+          imageSize="h-10 w-10"
         />
-        <Logo
-          src="/logo-cluster/glassdoor.svg"
+        <LogoWithCustomSize
+          src="/logo-cluster/eu.svg"
           left={255}
           top={210}
           hover={{ x: 3, y: 5, rotate: 7, delay: 0.2 }}
+          imageSize="h-10 w-14"
         />
-        <Logo
-          src="/logo-cluster/linkedin.svg"
+        <LogoWithCustomSize
+          src="/logo-cluster/ch.svg"
           left={144}
           top={40}
           hover={{ x: -2, y: -5, rotate: -6, delay: 0.15 }}
+          imageSize="h-10 w-10"
         />
-        <Logo
-          src="/logo-cluster/upwork.svg"
+        <LogoWithCustomSize
+          src="/logo-cluster/fda.svg"
           left={36}
           top={56}
           hover={{ x: -4, y: -5, rotate: -6, delay: 0.35 }}
+          imageSize="h-12 w-12"
         />
-        <Logo
-          src="/logo-cluster/we-work-remotely.svg"
+        <LogoWithCustomSize
+          src="/logo-cluster/mx.png"
           left={96}
           top={176}
           hover={{ x: -3, y: 5, rotate: 3, delay: 0.15 }}
+          imageSize="h-5 w-16"
         />
       </div>
     </div>
