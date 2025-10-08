@@ -1,6 +1,7 @@
 export const URLS = {
   CALENDLY: 'https://calendly.com/bastien-askcerto/30min',
   DEMO_WEBSITE: 'https://demo.askcerto.com',
+  LINKEDIN: 'https://www.linkedin.com/company/askcerto',
 } as const
 
 export const SITE = {

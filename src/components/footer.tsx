@@ -1,4 +1,5 @@
 import { PlusGrid, PlusGridItem, PlusGridRow } from '@/components/plus-grid'
+import { SITE, URLS } from '@/utils/constants'
 import { Button } from './button'
 import { Container } from './container'
 import { Gradient } from './gradient'
@@ -10,20 +11,25 @@ function CallToAction() {
   return (
     <div className="relative pt-20 pb-16 text-center sm:py-24">
       <hgroup>
-        <Subheading>Get started</Subheading>
+        <Subheading>Ready to get started?</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Ready to dive in?
+          Book a demo with our team
           <br />
-          Start your free trial today.
+          and see Certo in action.
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Get the cheat codes for selling and unlock your team&apos;s revenue
-        potential.
+        See how Certo automates product compliance checks across global
+        regulations.
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="#">
-          Get started
+        <Button
+          className="w-full sm:w-auto"
+          href={URLS.CALENDLY}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Book a Demo
         </Button>
       </div>
     </div>
@@ -53,55 +59,53 @@ function Sitemap() {
   return (
     <>
       <div>
-        <SitemapHeading>Product</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="/pricing">Pricing</SitemapLink>
-          <SitemapLink href="#">Analysis</SitemapLink>
-          <SitemapLink href="#">API</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
         <SitemapHeading>Company</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Careers</SitemapLink>
-          <SitemapLink href="/blog">Blog</SitemapLink>
-          <SitemapLink href="/company">Company</SitemapLink>
+          <SitemapLink href="/company">About Us</SitemapLink>
+          <SitemapLink
+            href={URLS.CALENDLY}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book a Demo
+          </SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Support</SitemapHeading>
+        <SitemapHeading>Contact</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Help center</SitemapLink>
-          <SitemapLink href="#">Community</SitemapLink>
+          <SitemapLink
+            href={`mailto:${SITE.EMAIL}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Email Us
+          </SitemapLink>
+          <SitemapLink
+            href={URLS.LINKEDIN}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Company</SitemapHeading>
+        <SitemapHeading>Legal</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Terms of service</SitemapLink>
-          <SitemapLink href="#">Privacy policy</SitemapLink>
+          <SitemapLink href="/privacy">Privacy Policy</SitemapLink>
+          <SitemapLink href="/terms">Terms of Service</SitemapLink>
         </SitemapLinks>
       </div>
     </>
   )
 }
 
-function SocialIconX(props: React.ComponentPropsWithoutRef<'svg'>) {
+function SocialIconEmail(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 16 16" fill="currentColor" {...props}>
-      <path d="M12.6 0h2.454l-5.36 6.778L16 16h-4.937l-3.867-5.594L2.771 16H.316l5.733-7.25L0 0h5.063l3.495 5.114L12.6 0zm-.86 14.376h1.36L4.323 1.539H2.865l8.875 12.837z" />
-    </svg>
-  )
-}
-
-function SocialIconFacebook(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 16 16" fill="currentColor" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M16 8.05C16 3.603 12.418 0 8 0S0 3.604 0 8.05c0 4.016 2.926 7.346 6.75 7.95v-5.624H4.718V8.05H6.75V6.276c0-2.017 1.194-3.131 3.022-3.131.875 0 1.79.157 1.79.157v1.98h-1.008c-.994 0-1.304.62-1.304 1.257v1.51h2.219l-.355 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.95z"
-      />
+      <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+      <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5a1.5 1.5 0 0 0 1.5 1.5h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
     </svg>
   )
 }
@@ -118,25 +122,16 @@ function SocialLinks() {
   return (
     <>
       <Link
-        href="https://facebook.com"
+        href={`mailto:${SITE.EMAIL}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Visit us on Facebook"
+        aria-label="Send us an email"
         className="text-gray-950 data-hover:text-gray-950/75"
       >
-        <SocialIconFacebook className="size-4" />
+        <SocialIconEmail className="size-5" />
       </Link>
       <Link
-        href="https://x.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Visit us on X"
-        className="text-gray-950 data-hover:text-gray-950/75"
-      >
-        <SocialIconX className="size-4" />
-      </Link>
-      <Link
-        href="https://linkedin.com"
+        href={URLS.LINKEDIN}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Visit us on LinkedIn"
@@ -151,7 +146,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Radiant Inc.
+      &copy; {new Date().getFullYear()} Certo.
     </div>
   )
 }

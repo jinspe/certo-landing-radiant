@@ -165,9 +165,9 @@ function DarkBentoSection() {
           />
           <BentoCard
             dark
-            eyebrow="Sources"
-            title="Connected to official sources"
-            description="Map each product to the regulations and retailer policies that apply. Updates are tracked with dates and citations for verifiable decisions."
+            eyebrow="Updates"
+            title="Live regulatory feeds"
+            description="Continuously monitor new regulations from official sources on a daily basis so you don't miss any changes."
             graphic={<LogoTimeline />}
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
