@@ -15,7 +15,7 @@ function CallToAction() {
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
           Book a demo with our team
           <br />
-          and see Certo in action.
+          and see Certo in action
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
@@ -146,7 +146,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Certo.
+      &copy; {new Date().getFullYear()} Certo
     </div>
   )
 }
