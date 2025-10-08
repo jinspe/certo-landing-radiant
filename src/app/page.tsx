@@ -92,9 +92,9 @@ function BentoSection() {
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
-          eyebrow="Evidence"
-          title="See audit-ready evidence"
-          description="Complete ingredient records, INCI, CAS, supplier documents, allergens, limits, and citations, kept in one place."
+          eyebrow="Ingestion"
+          title="Turn files into facts"
+          description="Upload product and regulatory documents. Certo extracts and structures key data, from ingredients and CAS to claims and certificates, then validates it against applicable rules with exact source citations."
           graphic={
             <div className="h-80 bg-[url(/screenshots/profile.png)] bg-size-[1000px_560px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />
           }
@@ -102,9 +102,9 @@ function BentoSection() {
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
         />
         <BentoCard
-          eyebrow="Checks"
-          title="Automated checks across regulations"
-          description="Cross-check ingredients and formulas against global rules and retailer policies, limits, bans, and warnings are clearly flagged."
+          eyebrow="Formula"
+          title="Explainable formula checks"
+          description="Check ingredients and totals against market rules with detailed justifications. Each issue includes the relevant regulation and rule citation to support fast, confident decisions."
           graphic={
             <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-size-[800px_465px] bg-position-[left_-38px_top_-25px] bg-no-repeat" />
           }
@@ -112,9 +112,9 @@ function BentoSection() {
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
-          eyebrow="Throughput"
-          title="Review more in less time."
-          description="Batch uploads, structured findings, and one-click reports shorten the path from intake to sign off."
+          eyebrow="Documents"
+          title="Auto-generate compliance files"
+          description="Generate regulator-grade documents like SDS, PIF, and CPSR with required data and citations for submissions."
           graphic={
             <div className="absolute inset-0 bg-[url(/screenshots/down-land.png)] bg-size-[825px_465px] bg-position-[left_-10px_top_-45px] bg-no-repeat" />
           }
@@ -122,9 +122,9 @@ function BentoSection() {
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
-          eyebrow="Source"
-          title="Authoritative sources."
-          description="Stay current with official regulations and retailer standards, with versioning and change alerts."
+          eyebrow="Regulations"
+          title="Scan applicable regulations"
+          description="Automatically map your product to latest applicable regulations and retailer policies by market, then automatically run the checks that apply."
           graphic={<LogoCluster />}
           className="lg:col-span-2"
         />
@@ -152,9 +152,9 @@ function DarkBentoSection() {
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <BentoCard
             dark
-            eyebrow="Review"
-            title="Review and resolve findings"
-            description="Each finding shows the rule, the determination, a plain language explanation, and legal citations with a link to the exact source page. You can follow the step by step reasoning, confirm the evidence, and record the resolution in a complete audit trail."
+            eyebrow="Materials"
+            title="Manage raw materials"
+            description="Ingest supplier documents, structure key data, and unify records by INCI and supplier. Surface compliance gaps across allergens, constituents, and impurities while tracking versions, approvals, and a full audit trail."
             graphic={
               <div className="h-80 bg-[url(/screenshots/networking.png)] bg-size-[851px_344px] bg-no-repeat" />
             }
@@ -180,9 +180,9 @@ function DarkBentoSection() {
           />
           <BentoCard
             dark
-            eyebrow="Reports"
-            title="Publish audit ready reports"
-            description="Create regulator grade reports that pair each determination with the governing clause and a citation to the exact source page. Share as PDF or link with page references and dates so quality and regulatory teams can verify without back and forth."
+            eyebrow="Impact"
+            title="Preview change impact"
+            description="Try a new raw material, update a supplier document, or adjust a level and preview affected products and markets. See which checks would fail, which documents need updates, and what tests are required to proceed."
             graphic={
               <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-size-[851px_344px] bg-no-repeat" />
             }
