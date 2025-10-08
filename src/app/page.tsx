@@ -40,7 +40,7 @@ function Hero() {
         />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Automate Product Compliance.
+            AI Compliance Agents.
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             Certo turns ever-changing global regulations into dynamic,
@@ -69,7 +69,7 @@ function FeatureSection() {
     <div className="overflow-hidden">
       <Container className="pb-24">
         <Heading as="h2" className="max-w-3xl">
-          A snapshot of ingredient risk & compliance.
+          Compliance automated at scale across global regulations.
         </Heading>
         <Screenshot
           width={1216}
@@ -87,7 +87,7 @@ function BentoSection() {
     <Container>
       <Subheading>Compliance</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        See where each product stands.
+        AI Agents for Every Regulatory Workflow.
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
