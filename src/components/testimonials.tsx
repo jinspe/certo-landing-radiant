@@ -20,44 +20,45 @@ import { Heading, Subheading } from './text'
 const testimonials = [
   {
     img: '/testimonials/tina-yards.jpg',
-    name: 'Tina Yards',
-    title: 'VP of Sales, Protocol',
+    name: 'Elena R.',
+    title: 'Regulatory Director, Global Skincare Brand',
     quote:
-      'Thanks to Radiant, we’re finding new leads that we never would have found with legal methods.',
+      'Certo saves us several weeks of work by flagging non-compliant marketing claims, and specifying the required tests to back the claims per country.',
   },
   {
     img: '/testimonials/conor-neville.jpg',
-    name: 'Conor Neville',
-    title: 'Head of Customer Success, TaxPal',
+    name: 'David M.',
+    title: 'Regulatory Affairs Lead, Food Supplements',
     quote:
-      'Radiant made undercutting all of our competitors an absolute breeze.',
+      'We went from manually scrolling in Excel files and pdf to running full formula checks across five markets in a single afternoon.',
   },
   {
     img: '/testimonials/amy-chase.jpg',
-    name: 'Amy Chase',
-    title: 'Head of GTM, Pocket',
+    name: 'Pierre F.',
+    title: 'Raw materials manager, Fragrance B2B player',
     quote:
-      'We closed a deal in literally a few minutes because we knew their exact budget.',
+      "With Certo, we instantly flagged missing allergens and inconsistent impurity levels across three supplier spec sheets. What would've taken a full day of manual comparison took less than 10 minutes.",
   },
   {
     img: '/testimonials/veronica-winton.jpg',
-    name: 'Veronica Winton',
-    title: 'CSO, Planeteria',
+    name: 'Dianne D.',
+    title: 'Global Quality & Compliance Director, Cosmetics B2C manufacturer',
     quote:
-      'We’ve managed to put two of our main competitors out of business in 6 months.',
+      "Certo flagged Oxybenzone threshold we'd missed in two separate reviews. It probably saved us a market recall on South Korean market.",
   },
   {
     img: '/testimonials/dillon-lenora.jpg',
-    name: 'Dillon Lenora',
-    title: 'VP of Sales, Detax',
-    quote: 'I was able to replace 80% of my team with RadiantAI bots.',
+    name: 'Eric P.',
+    title: 'CFO, Global Cosmetics player',
+    quote:
+      'Certo saved us the equivalent of two full-time compliance hires within the first quarter. And I know at every time where products are standing from launch.',
   },
   {
     img: '/testimonials/harriet-arron.jpg',
-    name: 'Harriet Arron',
-    title: 'Account Manager, Commit',
+    name: 'Jason T.',
+    title: 'Business Unit director',
     quote:
-      'I’ve smashed all my targets without having to speak to a lead in months.',
+      'It took us 4 weeks to have our labels reviewed by an external third-party. We can now do it a day.',
   },
 ]
 
@@ -116,16 +117,16 @@ function TestimonialCard({
       ref={ref}
       style={{ opacity }}
       {...props}
-      className="relative flex aspect-9/16 w-72 shrink-0 snap-start scroll-ml-(--scroll-padding) flex-col justify-end overflow-hidden rounded-3xl sm:aspect-3/4 sm:w-96"
+      className="relative flex aspect-1/1 w-72 shrink-0 snap-start scroll-ml-(--scroll-padding) flex-col justify-end overflow-hidden rounded-3xl sm:aspect-1/1 sm:w-96"
     >
       <img
         alt=""
         src={img}
-        className="absolute inset-x-0 top-0 aspect-square w-full object-cover"
+        className="absolute inset-x-0 top-0 hidden aspect-square w-full object-cover"
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-[calc(7/16*100%)] ring-1 ring-gray-950/10 ring-inset sm:from-25%"
+        className="absolute inset-0 rounded-3xl bg-linear-to-t from-gray-900 from-[calc(1/1*100%)] to-gray-900/80 ring-1 ring-gray-950/10 ring-inset sm:from-25%"
       />
       <figure className="relative p-10">
         <blockquote>
@@ -142,7 +143,7 @@ function TestimonialCard({
         <figcaption className="mt-6 border-t border-white/20 pt-6">
           <p className="text-sm/6 font-medium text-white">{name}</p>
           <p className="text-sm/6 font-medium">
-            <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
+            <span className="bg-linear-115 from-[#dbeafe] from-28% via-[#1e40af] via-70% to-[#64748b] bg-clip-text text-transparent sm:bg-linear-145">
               {title}
             </span>
           </p>
@@ -156,15 +157,17 @@ function CallToAction() {
   return (
     <div>
       <p className="max-w-sm text-sm/6 text-gray-600">
-        Join the best sellers in the business and start using Radiant to hit
-        your targets today.
+        Join leading brands who trust Certo to automate their compliance
+        workflows and reduce regulatory risk.
       </p>
       <div className="mt-2">
         <Link
-          href="#"
-          className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
+          href="https://calendly.com/bastien-askcerto/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm/6 font-semibold text-blue-900"
         >
-          Get started
+          Book a demo
           <ArrowLongRightIcon className="size-5" />
         </Link>
       </div>

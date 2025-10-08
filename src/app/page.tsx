@@ -3,7 +3,6 @@ import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { Gradient } from '@/components/gradient'
-import { Keyboard } from '@/components/keyboard'
 import { Link } from '@/components/link'
 import { LinkedAvatars } from '@/components/linked-avatars'
 import { LogoCluster } from '@/components/logo-cluster'
@@ -55,9 +54,9 @@ function Hero() {
             >
               Schedule a demo
             </Button>
-            <Button variant="secondary" href="#how-it-works">
+            {/* <Button variant="secondary" href="#how-it-works">
               See how it works
-            </Button>
+            </Button> */}
           </div>
         </div>
       </Container>
@@ -107,7 +106,7 @@ function BentoSection() {
           title="Automated checks across regulations"
           description="Cross-check ingredients and formulas against global rules and retailer policies, limits, bans, and warnings are clearly flagged."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-size-[1100px_650px] bg-position-[left_-38px_top_-73px] bg-no-repeat" />
+            <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-size-[800px_465px] bg-position-[left_-38px_top_-25px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
@@ -117,10 +116,9 @@ function BentoSection() {
           title="Review more in less time."
           description="Batch uploads, structured findings, and one-click reports shorten the path from intake to sign off."
           graphic={
-            <div className="flex size-full pt-10 pl-10">
-              <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
-            </div>
+            <div className="absolute inset-0 bg-[url(/screenshots/down-land.png)] bg-size-[825px_465px] bg-position-[left_-10px_top_-45px] bg-no-repeat" />
           }
+          fade={['bottom']}
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
