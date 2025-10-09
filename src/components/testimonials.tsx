@@ -23,42 +23,42 @@ const testimonials = [
     name: 'Elena R.',
     title: 'Regulatory Director, Global Skincare Brand',
     quote:
-      'Certo saves us several weeks of work by flagging non-compliant marketing claims, and specifying the required tests to back the claims per country.',
+      'Certo saves us several weeks of work by flagging non-compliant marketing claims and specifying the required tests to back up the claims per country.',
   },
   {
     img: '/testimonials/conor-neville.jpg',
     name: 'David M.',
     title: 'Regulatory Affairs Lead, Food Supplements',
     quote:
-      'We went from manually scrolling in Excel files and pdf to running full formula checks across five markets in a single afternoon.',
+      'We went from manually scrolling through Excel files and PDFs to running full formula checks across five markets in a single afternoon.',
   },
   {
     img: '/testimonials/amy-chase.jpg',
     name: 'Pierre F.',
     title: 'Raw materials manager, Fragrance B2B player',
     quote:
-      "With Certo, we instantly flagged missing allergens and inconsistent impurity levels across three supplier spec sheets. What would've taken a full day of manual comparison took less than 10 minutes.",
+      "With Certo, we instantly flagged missing allergens and inconsistent impurity levels across three supplier spec sheets. What would've taken a full day of manual comparison now takes less than 10 minutes.",
   },
   {
     img: '/testimonials/veronica-winton.jpg',
     name: 'Dianne D.',
     title: 'Global Quality & Compliance Director, Cosmetics B2C manufacturer',
     quote:
-      "Certo flagged Oxybenzone threshold we'd missed in two separate reviews. It probably saved us a market recall on South Korean market.",
+      "Certo flagged an Oxybenzone threshold we'd missed in two separate reviews. It probably saved us from a market recall in South Korea.",
   },
   {
     img: '/testimonials/dillon-lenora.jpg',
     name: 'Eric P.',
     title: 'CFO, Global Cosmetics player',
     quote:
-      'Certo saved us the equivalent of two full-time compliance hires within the first quarter. And I know at every time where products are standing from launch.',
+      'Certo saved us the equivalent of two full-time compliance hires within the first quarter. And I always know where products stand from launch.',
   },
   {
     img: '/testimonials/harriet-arron.jpg',
     name: 'Jason T.',
     title: 'Business Unit director',
     quote:
-      'It took us 4 weeks to have our labels reviewed by an external third-party. We can now do it a day.',
+      'It used to take us 4 weeks to have our labels reviewed by an external third-party. We can now do it in a day.',
   },
 ]
 
