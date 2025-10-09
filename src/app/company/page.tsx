@@ -111,13 +111,18 @@ function Team() {
         Built by people who know both the art and the pain of compliance.
       </Heading>
       <Lead className="mt-6 max-w-3xl">
-        Bastien had spent years at Roland Berger advising FMCG biggest players
-        in the world on strategy, he saw firsthand how regulatory increasing
-        complexity slowed down billion-dollar launches.
+        Our founders bring together deep regulatory expertise and technical
+        innovation to solve the compliance challenges that slow down the
+        industry.
       </Lead>
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="max-w-lg">
           <p className="text-sm/6 text-gray-600">
+            Bastien had spent years at Roland Berger advising FMCG biggest
+            players in the world on strategy, he saw firsthand how regulatory
+            increasing complexity slowed down billion-dollar launches.
+          </p>
+          <p className="mt-8 text-sm/6 text-gray-600">
             Jean, an engineer specialized in AI and automation, built
             data-driven products used for over 1,000 businesses, he knew what
             was technically possible if the right data and logic could be
