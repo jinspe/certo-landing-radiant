@@ -12,6 +12,7 @@ import { Navbar } from '@/components/navbar'
 import { Screenshot } from '@/components/screenshot'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
+import { VideoSection } from '@/components/video-section'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
 
@@ -96,7 +97,7 @@ function BentoSection() {
           title="Turn files into facts"
           description="Upload product and regulatory documents. Certo extracts and structures key data, from ingredients and CAS to claims and certificates, then validates it against applicable rules with exact source citations."
           graphic={
-            <div className="h-80 bg-[url(/screenshots/profile.png)] bg-size-[1000px_560px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="absolute inset-0 bg-[url(/screenshots/profile.png)] bg-size-[792px_446px] bg-position-[left_-210px_top_-80px] bg-no-repeat sm:bg-position-[left_-50px_top_-80px]" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -208,6 +209,7 @@ export default function Home() {
           <BentoSection />
         </div>
         <DarkBentoSection />
+        <VideoSection />
       </main>
       <Testimonials />
       <Footer />
